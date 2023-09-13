@@ -1,0 +1,49 @@
+/* esto lo vamos a usar siempre */
+*{
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #33691e;
+}
+
+form {
+    background-color: #aed581;
+    width: fit-content;
+    padding: 10px;
+    margin: 5px;
+    border: #33691e solid 2px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="number"], 
+textarea, 
+select {
+
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    background-color: #dcedc8;
+    border: #33691e solid 2px;
+}
+
+input[type="file"]{
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    min-width: max-content;
+    color: #aed581;
+    background-color: #33691e;
+}

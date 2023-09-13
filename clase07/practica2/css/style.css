@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.item {
+    color: aliceblue;
+    background-color: rgb(27, 144, 148);
+    border: 1px solid black;
+}
+
+#id-item2 {
+    margin-left: auto;
+}
+
+.contenedor2 {
+    height: 250px;
+    width: 100%;
+    padding: 1px;
+    border: solid 1px black;
+    background-color: rgb(10, 248, 169);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    color: aliceblue;
+    background-color: rgba(9, 103, 243, 0.61);
+    border: solid 1px black;
+
+}

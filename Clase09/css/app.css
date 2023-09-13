@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: aqua;
+    color: rgb(73, 5, 129);
+    height: 20vh;
+    width: 20vw;
+    border: 1px solid;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 90vh;
+    background-color: chartreuse;
+}
+
+@media (max-width: 920px) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 49%;
+    }
+}
+
+@media (max-width: 360px) {
+    .card {
+        width: 100%;
+    }
+}
+
+
+

@@ -1,0 +1,38 @@
+/*
+Peso de reglas --> aplica para una sola etiqueta
+1° id
+2° class
+3° tag
+*/
+h1{
+    color: red;
+}
+
+p{
+    color: blue;
+    background-color: chartreuse;
+}
+
+.color{
+    color: blue;
+}
+
+.parrafo-destacado{
+    color: white;
+    background-color: black;
+}
+
+#parrafo1{
+    border: solid 3px blue;
+    color: blueviolet;
+}
+
+.color-hexadecimal{
+    color: #fc8311;
+}
+
+.color-notacion-rgba {
+    color: rgba(89, 0, 255, 0.911);
+    background-color: rgb(255, 205, 205);
+}
+

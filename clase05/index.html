@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 05 - Formularios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Formularios HTML</h1>
+
+    <form action="ejemplo.com/registro" method="post">
+        <div>
+            <!-- Identificador visual del formulario -->
+            <!-- El for= ayuda a mejorar la experiencia de usuario
+            ya que al darle click nos dirije directamente al formulario -->
+            <label for="input-fullname"><br>Nombre y Apellido:</label>
+            <!-- Cuadro de ingreso de texto (captura de datos) -->
+            <!-- maxlength controla el máximo de letras a ingresar en un formulario -->
+            <!-- minlength controla el mínimo de letrar a ingresar en un formulario -->
+            <!-- la opción "required" permite que el formulario no se envíe a menos
+            que el mismo este completo-->
+            <input type="text" id="input-fullname" name="fullname" maxlength="35" placeholder="Ingresa tu nombre y apellido">
+        </div>
+        <div>
+            <!-- Identificador visual del formulario -->
+            <label for="input-email">Correo Electrónico:</label>
+            <!-- Cuadro para capturar correos electrónicos -->
+            <input type="email" id="input-email" name="email" placeholder="Ingresa tu email">
+        </div>
+        <div>
+            <label for="input-password">Contraseña:</label>
+            <!-- El tipo password permite el ingreso de contraseñas de forma "secreta" con **** -->
+            <input type="password" id="input-password" name="password" placeholder="Ingresa tu contraseña">
+        </div>
+        <div>
+            <label for="input-age">Edad</label>
+            <!-- el type number permite ingresar números con un selector de arriba o abajo -->
+            <!-- las opciones "min" y "max" permiten setear el rango de valores aceptados para el formulario-->
+            <input type="number" name="age" id="input-age" placeholder="Ingrese su edad">
+        </div>
+        <div>
+            <!-- el tipo radio permite elegir entre diferentes opciones de datos una sola opción -->
+            <label for="input-civil-estate">Estado Civil:</label>
+            <input type="radio" name="civil-state" id="input-civil-estate" value="soltero/a" checked>Soltero/a
+            <input type="radio" name="civil-state" id="input-civil-estate" value="casado/a">Casado/a
+            <input type="radio" name="civil-state" id="input-civil-estate" value="viudo/a">Viudo/a
+            <input type="radio" name="civil-state" id="input-civil-estate" value="divorciado/a">Divorciado
+        </div>
+        <div>
+            <label for="input-preferences">Preferencias:</label>
+            <!-- la opción checked permite elegir por defecto una opción de los chackbox -->
+            <input type="checkbox" name="preferences1" id="input-preferences1" checked>Caminar
+            <input type="checkbox" name="preferences2" id="input-preferences2">Correr
+            <input type="checkbox" name="preferences1" id="input-preferences3">Nadar
+        </div>
+        <div>
+            <label for="input-photo">Fotografía:</label>
+            <!-- Permite cargar un archivo -->
+            <input type="file" id="input-photo" name="photo">
+        </div>
+        <div>
+            <label for="input-country"><br><br>País</label>
+            <!-- El tipo select permite dar varias opciones para elegir de una lista -->
+            <!-- la opción "multiple" dentro del select
+                te permite tener una lista de opciones desplegada
+                y elegir una o más opciones
+            -->
+            <select name="country" id="input-country">
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="peru">Perú</option>
+            </select>
+        </div>
+        <div>
+            <!-- la opción "textarea" permite ingresa texto "largo" dentro de un cuadro-->
+            <label for="input-coments"><br><br>Comentarios:<br></label>
+            <!-- las opciones "cols" y "rows" permiten definir la cantidad
+            de columnas y filas que se "veran" del textarea-->
+            <!-- la opción "maxlength" permitira definir el máximo de caractéres
+            que podremos ingresar en el textarea-->
+            <textarea name="coments" id="input-coments" cols="20" rows="5"></textarea>
+        </div>
+
+        <!-- Envía los datos del formulario -->
+        <input type="submit" id="input-submit" value="Enviar datos">
+
+
+
+
+
+    </form>
+
+
+</body>
+</html>
